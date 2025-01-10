@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="main.js"></script>
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
+    <title>Document</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg  fixed-top p-1">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/logo.png" alt="" class="nav-logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto me-auto mb-2 mb-lg-0 text-white">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Product
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Solutions
+                </a>
+                <ul class="dropdown-menu ">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item text-white">
+                <a class="nav-link text-white" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Resources
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search" id="form">
+              <button class="btn btn-outline-success" type="submit" id="nav-btn-1">Sign In</button>
+              <button class="btn btn-outline-success" type="submit" id="nav-btn-2">Schedule a demo</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    
+      <main>
+        <!-- Hero section -->
+        <section class="Hero-section w-100 px-3 py-1 d-flex row ">
+          <div class="Hero-section-1 col-2 d-none" id="Hero-set1" style="margin-top: 4rem;">
+              <img src="images/Legal1.png" alt="" class="Hero-section-1-img1">
+              <img src="images/finance.png" alt="" class="Hero-section-1-img2">
+              <img src="images/Sales.png" alt="" class="Hero-section-1-img3">
+          </div>
+          <div class="Hero-section-2 col-8" style="margin-top: 9rem;">
+              <h1>CONTRACT MANAGEMENT THAT DRIVES EVERY TEAM FORWARD</h1>
+              <p class="mt-2">Tomorro helps companies reduce the time they spend managing contracts, and gives them
+                  greater control and visibility over legal and financial risks.</p>
+                  <div class="Hero-btns">
+                    <div class="Hero-btns-1a">
+                      <button class="Hero-btns-1">Schedule a demo</button>
+                      <button id="Hero-btn2" class="Hero-btns-2 d-none"><img src="images/play.png" alt="" style="width: 24px; height: 24px; margin-right: 4px;">See a demo</button>
+                    </div>
+                      <div id="Hero-dot-design" class="Hero-dot-design d-none">
+                          <div class="Hero-dot-design-1">
+                              <span class="hero-dot"></span>
+                              <span class="hero-dot"></span>
+                              <span class="hero-dot"></span>
+                              <span class="hero-dot"></span>  
+                              <span class="hero-dot"></span>
+                          </div>
+                          <div class="Hero-dot-design-2">
+                              <span class="hero-dot"></span>
+                              <span class="hero-dot"></span>
+                              <span class="hero-dot"></span>
+                              <span class="hero-dot"></span>
+                              <span class="hero-dot"></span>
+                          </div>
+                      </div>
+                      <div id="Hero-dot-beneath" class="Hero-dot-beneath d-none">
+                          <p>4.9 on G2</p>
+                          <p>4.9 on Capterra</p>
+                      </div>
+                  </div>
+
+          </div>
+          <div class="Hero-section-3 col-2 d-none" id="Hero-set3" style="margin-top: 5rem;">
+              <img src="images/procurment.png" alt="" class="Hero-section-3-img1">
+              <img src="images/operations.png" alt="" class="Hero-section-3-img2">
+              <img src="images/HR.png" alt="" class="Hero-section-3-img3">
+          </div>
+      </section>
+
+      <!-- Middle text -->
+      <p class="text-center w-100 mt-2">1000+ companies manage their contracts with Tomorro</p>
+
+
+      <!-- Middle image -->
+      <div class="container mt-5 w-100">
+        <div class="animation-container"></div>
+            <!-- Moving Image -->
+        
+           <img src="images/Frame 8 (1).png" alt="Moving Image" class="moving-image"><img src="images/Frame 8 (1).png" alt="Moving Image" class="moving-image"></img>
+           <img src="images/Frame 8 (1).png" alt="Moving Image" class="moving-image">
+     </div> 
+
+       <!-- OUR FEATURES SECTION -->
+       <section class="hero-features">
+        <h3 class="hero-features-header mb-3 text-center">OUR FEATURES</h3>
+         <!-- Features-set -->
+        <div class="Features-box pt-5">
+          <div class="Features-ul">
+            <ul class="nav nav-pills w-100 px-1 py-1 gap-2 p-1 small mx-auto mx-5 my-5 px-5 py-3 rounded-5 shadow-sm" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
+              
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active rounded-5" onclick="showContent(1)" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Repository</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link rounded-5" onclick="showContent(2)" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Generation</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link rounded-5" onclick="showContent(3)" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Collaboration</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link rounded-5" onclick="showContent(4)" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">E-signature</button>
+                </li>
+            </ul>
+          </div>
+           <!-- Feature-repository-->
+            <div class="feature-home d-flex mb-2" id="content-1">
+                <div class="feature-home-text">
+                    <h3>Never miss a deadline again</h3>
+                    <p class="feature-home-text1">Centralize all your contracts on a secure platform and improve your follow-up with our automatic reminders.</p>
+                    <div>
+                        <div class="d-flex">
+                            <div class=" rounded-circle mt-1" style="width: 12px; height: 12px; background-color: #68EF3F; margin-right: 15px;"></div>
+                            <p>Automated renewal tracking and reminders</p>
+                           
+                        </div>
+                        <div  class="d-flex">
+                            <div class=" rounded-circle mt-1" style="width: 12px; height: 12px; background-color: #68EF3F; margin-right: 15px;"></div>
+                            <p>Powerful filters and search to access information quickly</p>
+                           
+                        </div>
+                        <div  class="d-flex">
+                            <div class=" rounded-circle mt-1" style="width: 12px; height: 12px; background-color: #68EF3F; margin-right: 15px;"></div>
+                            <p>Folder structure to stay organized</p>
+                        </div>
+                    </div>
+                    <button class="btn-repo">Find out more on the repository</button>
+                </div>
+                <img src="images/mixpage.png" alt="" id="feature-tag-img" class="feature-home-img1 d-none">
+            </div>
+
+
+            <!-- features -generation -->
+            <div class="feature-home d-flex d-none" id="content-2" >
+                <div class="feature-home-text">
+                    <h3>Less paper work, more control</h3>
+                    <p class="feature-home-text1">Save time in the management of your contracts by eliminating time-consuming manual tasks.</p>
+                    <div>
+                        <div class="d-flex">
+                            <div class=" rounded-circle mt-1" style="width: 12px; height: 12px; background-color: #68EF3F; margin-right: 15px;"></div>
+                            <p>Powerful templates with variables and conditional clause display.</p>
+                           
+                        </div>
+                        <div  class="d-flex">
+                            <div class=" rounded-circle mt-1" style="width: 12px; height: 12px; background-color: #68EF3F; margin-right: 15px;"></div>
+                            <p>Set up rules to trigger approval workflows at the right time.</p>
+                           
+                        </div>
+                        <div  class="d-flex">
+                            <div class=" rounded-circle mt-1" style="width: 12px; height: 12px; background-color: #68EF3F; margin-right: 15px;"></div>
+                            <p>Automated storage rules to save and share document with the right people.</p>
+                        </div>
+                    </div>
+                    <button class="btn-repo">Find out more on the generation</button>
+                </div>
+                <img src="images/mixpage2.png" alt="" id="feature-tag-img" class="feature-home-img1 d-none">
+            </div>
+
+
+            <!-- feature-collaboration -->
+            <div class="feature-home d-flex d-none" id="content-3">
+                <div class="feature-home-text">
+                    <h3>Streamlined collaboration and faster negotiation</h3>
+                    <p class="feature-home-text1">Save your teams hour with in-gaps negotiation: fewer emails, fewer rounds trips and more reactivity</p>
+                    <div>
+                        <div class="d-flex">
+                            <div class=" rounded-circle mt-1" style="width: 10px; height: 10px; background-color: #68EF3F; margin-right: 15px;"></div>
+                            <p>Reliable audit trail with internal and external split for contol over the negotiation</p>
+                           
+                        </div>
+                        <div  class="d-flex">
+                            <div class=" rounded-circle mt-1" style="width: 10px; height: 10px; background-color: #68EF3F; margin-right: 15px;"></div>
+                            <p>intuitive and free negotiation portal for counterparties</p>
+                           
+                        </div>
+                        <div  class="d-flex">
+                            <div class=" rounded-circle mt-1" style="width: 10px; height: 10px; background-color: #68EF3F; margin-right: 15px;"></div>
+                            <p>Free and legally biding native eSignature for a great end-to-end experience</p>
+                        </div>
+                    </div>
+                    <button class="btn-repo">Find out more on the collaboration</button>
+                </div>
+                <img src="images/mixpage3.png" alt="" id="feature-tag-img" class="feature-home-img1 d-none">
+            </div>
+
+
+
+            <!-- Feature e-signature -->
+            <div class="feature-home d-flex d-none" id="content-4" >
+                <div class="feature-home-text">
+                    <h3>Reduce contract signing times</h3>
+                    <p class="feature-home-text1">Insert signature areas wherever you want, in one click</p>
+                    <div>
+                        <div class="d-flex">
+                            <div class=" rounded-circle mt-1" style="width: 10px; height: 10px; background-color: #68EF3F; margin-right: 15px;"></div>
+                            <p>CLM + eSignature : 2-in-1 tool</p>
+                           
+                        </div>
+                        <div  class="d-flex">
+                            <div class=" rounded-circle mt-1" style="width: 10px; height: 10px; background-color: #68EF3F; margin-right: 15px;"></div>
+                            <p>Signature management for your projects generated from Leeway, as well as your external documents</p>
+                           
+                        </div>
+                        <div  class="d-flex">
+                            <div class=" rounded-circle mt-1" style="width: 10px; height: 10px; background-color: #68EF3F; margin-right: 15px;"></div>
+                            <p>Legally binding signature, to the European elDAS standard</p>
+                        </div>
+                    </div>
+                    <button class="btn-repo">Find out more on the e-signature</button>
+                </div>
+                <img src="images/mixpage4.png" alt="" id="feature-tag-img" class="feature-home-img1 d-none">
+            </div>
+        </div>   
+      </section>
+
+
+        <!-- Video path -->
+        <div class="video-path mb-3">
+          <p class="video-path-text">Discover the best solution <span class="d-none" id="video-path-1" style="color: black;"> for optimizing your contract management</span></p>
+          <img src="images/video-pics.png" alt="" class="video-path-img w-100">
+       </div>
+
+
+       
+           <!-- Designed-company -->
+           <div class="Designed-company pb-5" >
+            <h2 class="Designed-company-h2 text-center">DESIGNED FOR THE ENTIRE COMPANY</h2>
+            <p class="Designed-company-p text-center">Find out how Tomorro benefits your whole business.</p>
+               <div class="image-container" style="margin-top: 2rem;">
+               <div class="image-box">
+                 <img src="images/design1.png" alt="Image 1">
+                 <div class="overlay">
+                    <h3>Legal team</h3>
+                    <p>Set up the basic functions of your Tomorro account in just a few minutes.</p>
+                    <button>See use case</button>
+                 </div>
+               </div>
+               <div class="image-box">
+                  <img src="images/design2.png" alt="Image 2">
+                  <div class="overlay">
+                     <h3>Sales team</h3>
+                     <p>Reduce administrative tasks and keep an eye on the progress of your negotiations.</p>
+                     <button>See use case</button>
+                  </div>
+               </div>
+               <div class="image-box">
+                  <img src="images/design3.png" alt="Image 3">
+                  <div class="overlay">
+                    <h3>Finance team</h3>
+                <p>Keep control of your business and boost the performance of your legal department.</p>
+                <button>See use case</button>
+                  </div>
+               </div>
+        </div>
+      </div>
+
+
+        <div class="evaneos-section d-flex">
+          <div class="evaneos-section-text">
+            <h2>Evaneos reduces its legal and financial risks with Tomorro</h2>
+            <p>Tomorro accompanies Evaneos, a platform that connects
+              travelers with local travel agencies around the world to offer
+              tailor-made trips.
+            </p>
+          </div>
+          <div id="evaneos-section-img" class="evaneos-section-img d-none">
+            <img   src="images/evaneos.png" alt="" >
+          </div>
+        </div>
+
+        <div class="evaneos-box ">
+          <div class="evaneos-challenge">
+            <div class="evaneos-challenge-1">
+              <img src="images/div.icon-wrapper (1).png" alt="">
+              <p>Challenge</p>
+            </div>
+            <p>Florence wanted to <span>automate some of the redundant work</span> to
+              free up time for her team and operational staff. Securing legal
+              operations, by <span>providing alerts on due dates</span> and <span>storing
+              contracts in a single location,</span> was also part of her brief.</p>
+          </div>
+  
+  
+          <div class="evaneos-solution">
+            <div  class="evaneos-solution-1">
+              <img src="images/div.icon-wrapper (2).png" alt="">
+              <p>Solution</p>
+            </div>
+            <p>With Tomorro, Florence has been able to automate the entire
+              generation of new documents and give autonomy to the
+              teams.
+            </p>
+            <a href="">Read full testimonials</a>
+          </div>
+        </div>
+        <div class="visible-set">
+          <p>"Having visibility over all contracts is a central issue. It's the only way to control and be alerted to expiring contracts, so that the
+            service can prevent their automatic renewal."
+          </p>
+          <div class="visible-set-2">
+            <img src="images/circle-lady.png" alt="">
+            <p><span>Florence Rivat</span>  • Directrice Juridique d’Evaneos</p>
+  
+          </div>
+        </div>
+
+          <!-- testimony-button -->
+        <div class="testimonial">
+           <button class="btn-testimony">Read full testimonial</button>
+        </div>
+        <div class="customer-set d-flex">
+           <div class="customer-set-img">
+             <img src="images/div.tag-testimonial.png" alt="" style="width: 264px; height: 54px;" >
+           </div>
+         <img src="images/div.tag-testimonial (7).png" alt="" style="width: 44px; height: 54px;">
+        </div>
+        <div class="customer-set3">
+        <img src="images/div.tag-testimonial (2).png" alt="" style="width: 264px; height: 54px;">
+        </div>
+        <div class="customer-set4 d-flex">
+          <div class="centered-div d-flex">
+             <img src="images/div.tag-testimonial (3).png" alt=""  style="width: 184px; height: 44px;">
+          </div>
+          <img src="images/div.tag-testimonial (4).png" alt="" style="width: 44px; height: 54px;">
+        </div>
+
+
+
+
+
+
+        <div class="carousel-set" >
+          
+          <!-- Carousel Items -->
+
+          <div class="container my-5">
+            <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+    
+                <!-- Carousel Inner -->
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background-color: #F2F5EB; border: none;">
+                                        <p>"Tomorro has dramatically improved
+                                          our ability to manage contracts
+                                          accurately and quickly. Its intuitive
+                                          interface and robust feature set
+                                          perfectly match the requirements of
+                                          our industry.”</p>
+
+                                          <div class="d-flex" style="margin-top: 11.5rem; ">
+                                            <img src="images/div.picture-large (2).png" alt="" style="width: 50px; height: 50px; margin-right: 0.5rem;">
+                                            <div>
+                                              <p style="margin-top: 0.5rem;">Alexia Delahousse • Vp Legal, Qonto</p>
+                        
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background-color: #F2F5EB; border: none;">
+                                      <p>"Tomorro is a great tool for people
+                                        on the team who need to draft
+                                        agreements but don't come from a
+                                        legal background.”</p>
+
+                                        <div class="d-flex" style="margin-top: 16rem; ">
+                                          <img src="images/div.picture-large (2).png" alt="" style="width: 50px; height: 50px; margin-right: 0.5rem;">
+                                          <div>
+                                            <p style="margin-top: 0.5rem;">Alexia Delahousse • Vp Legal, Qonto</p>
+                      
+                                          </div>
+                                        </div>
+                                  </div>
+                                      
+                                        
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                  <div class="card-body" style="background-color: #F2F5EB; border: none;">
+                                    <p>"The support and responsiveness of
+                                      Tomorro's teams made all the
+                                      difference.”</p>
+
+                                      <div class="d-flex" style="margin-top: 19rem; ">
+                                        <img src="images/div.picture-large (2).png" alt="" style="width: 50px; height: 50px; margin-right: 0.5rem;">
+                                        <div>
+                                          <p style="margin-top: 0.5rem;">Alexia Delahousse • Vp Legal, Qonto</p>
+                    
+                                        </div>
+                                      </div>
+                                </div>
+                                    
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card">
+                                  <div class="card-body" style="background-color: #F2F5EB; border: none;">
+                                    <p>"Tomorro has dramatically improved
+                                      our ability to manage contracts
+                                      accurately and quickly. Its intuitive
+                                      interface and robust feature set
+                                      perfectly match the requirements of
+                                      our industry.”</p>
+
+                                      <div class="d-flex" style="margin-top: 12rem; ">
+                                        <img src="images/div.picture-large (2).png" alt="" style="width: 50px; height: 50px; margin-right: 0.5rem;">
+                                        <div>
+                                          <p style="margin-top: 0.5rem;">Alexia Delahousse • Vp Legal, Qonto</p>
+                    
+                                        </div>
+                                      </div>
+                                </div>
+
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                  <div class="card-body" style="background-color: #F2F5EB; border: none;">
+                                    <p>"Tomorro has dramatically improved
+                                      our ability to manage contracts
+                                      accurately and quickly. Its intuitive
+                                      interface and robust feature set
+                                      perfectly match the requirements of
+                                      our industry.”</p>
+
+                                      <div class="d-flex" style="margin-top: 12rem; ">
+                                        <img src="images/div.picture-large (2).png" alt="" style="width: 50px; height: 50px; margin-right: 0.5rem;">
+                                        <div>
+                                          <p style="margin-top: 0.5rem;">Alexia Delahousse • Vp Legal, Qonto</p>
+                    
+                                        </div>
+                                      </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                  <div class="card-body" style="background-color: #F2F5EB; border: none;">
+                                    <p>"Tomorro has dramatically improved
+                                      our ability to manage contracts
+                                      accurately and quickly. Its intuitive
+                                      interface and robust feature set
+                                      perfectly match the requirements of
+                                      our industry.”</p>
+
+                                      <div class="d-flex" style="margin-top: 12rem; ">
+                                        <img src="images/div.picture-large (2).png" alt="" style="width: 50px; height: 50px; margin-right: 0.5rem;">
+                                        <div>
+                                          <p style="margin-top: 0.5rem;">Alexia Delahousse • Vp Legal, Qonto</p>
+                    
+                                        </div>
+                                      </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card">
+                                  <div class="card-body" style="background-color: #F2F5EB; border: none;">
+                                    <p>"Tomorro has dramatically improved
+                                      our ability to manage contracts
+                                      accurately and quickly. Its intuitive
+                                      interface and robust feature set
+                                      perfectly match the requirements of
+                                      our industry.”</p>
+
+                                      <div class="d-flex" style="margin-top: 12rem; ">
+                                        <img src="images/div.picture-large (2).png" alt="" style="width: 50px; height: 50px; margin-right: 0.5rem;">
+                                        <div>
+                                          <p style="margin-top: 0.5rem;">Alexia Delahousse • Vp Legal, Qonto</p>
+                    
+                                        </div>
+                                      </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                  <div class="card-body" style="background-color: #F2F5EB; border: none;">
+                                    <p>"Tomorro has dramatically improved
+                                      our ability to manage contracts
+                                      accurately and quickly. Its intuitive
+                                      interface and robust feature set
+                                      perfectly match the requirements of
+                                      our industry.”</p>
+
+                                      <div class="d-flex" style="margin-top: 12rem; ">
+                                        <img src="images/div.picture-large (2).png" alt="" style="width: 50px; height: 50px; margin-right: 0.5rem;">
+                                        <div>
+                                          <p style="margin-top: 0.5rem;">Alexia Delahousse • Vp Legal, Qonto</p>
+                    
+                                        </div>
+                                      </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                  <div class="card-body" style="background-color: #F2F5EB; border: none;">
+                                    <p>"Tomorro has dramatically improved
+                                      our ability to manage contracts
+                                      accurately and quickly. Its intuitive
+                                      interface and robust feature set
+                                      perfectly match the requirements of
+                                      our industry.”</p>
+
+                                      <div class="d-flex" style="margin-top: 12rem; ">
+                                        <img src="images/div.picture-large (2).png" alt="" style="width: 50px; height: 50px; margin-right: 0.5rem;">
+                                        <div>
+                                          <p style="margin-top: 0.5rem;">Alexia Delahousse • Vp Legal, Qonto</p>
+                    
+                                        </div>
+                                      </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Controls -->
+                 <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev" style="margin-top: 14rem;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button> 
+            </div>
+        </div>
+
+      </div>
+          
+
+
+
+
+
+
+
+
+      
+   <!-- tomorro-awards -->
+   <div class="tomorro-awards">
+    <h1 class="tomorro-awards-caption">TOMORRO, AN AWARD-WINNING SERVICE FOR 2 YEARS</h1>
+    <p>Voted the fastest CLM solution to implement and the easiest to administer</p>
+    <div >
+      <div class="tomorro-awards-1">
+        <div class="tomorro-awards-1a">
+          <img src="images/div.icon-wrapper.png" alt="" class="img-icon" style="background-color: white;">
+          <div>
+            <h4>Leader</h4>
+            <p>Winter 2023</p>
+          </div>
+        </div>
+        <div class="tomorro-awards-1b">
+          <img src="images/div.icon-wrapper.png" alt="" class="img-icon" style="background-color: white;">
+          <div>
+            <h4>Best support</h4>
+            <p>Winter 2023</p>
+          </div>
+        </div>
+        <div id="tomorro-awards-1c" class="tomorro-awards-1c d-none">
+          <img src="images/div.icon-wrapper.png" alt="" class="img-icon" style="background-color: white;">
+          <div>
+            <h4>Users love Us</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="tomorro-awards2">
+        <div class="tomorro-awards2b">
+          <img src="images/div.icon-wrapper.png" alt="" class="img-icon" >
+          <div>
+            <h4>Easiest admin</h4>
+            <p>Fall 2023</p>
+          </div>
+        </div>
+        <div class="tomorro-awards2c">
+          <img src="images/div.icon-wrapper.png" alt="" class="img-icon">
+          <div>
+            <h4>Fastest Implementation</h4>
+            <p>Summer 2023</p>
+          </div>
+        </div>        
+      </div>
+    </div>
+
+
+    <div  id="icon-pack" class="icon-pack d-none">
+      <img src="images/icon-dot.png" alt="" class="icon-dots1">
+      <div class="icon-dots">
+       <span class="greendot"></span>
+       <span class="greendot"></span>
+       <span class="greendot"></span>
+       <span class="greendot"></span>
+       <span class="greendot"></span>
+      </div>
+      <button class="demo">Schedule a demo</button>
+    </div>
+
+  </div>
+
+
+  <div class="contract-mgt">
+    <h1 class="contract-mgt-h1">READY TO TAKE CONTROL OF YOUR <br>CONTRACT MANAGEMENT?</h1>
+    <div class="btn-mgt1">
+    <button class="btn-mgt"> <img src="images/icons.png  " alt="" >Talk with an expert</button>
+    </div>
+    <p class="tomorroteam">The Tomorro team</p>
+   </div>
+
+
+
+
+   <!-- footer -->
+   <div class="footer">
+    <div class="footer-caption">
+      <div>
+        <img src="images/logo.png" alt="" class="footer-logo">
+      </div>
+      <div id="footer-logo-text" class="footer-logo-text d-none">
+        <img src="images/Vector (1).png" alt="" class="footer-image1">
+        <p class="footer-image-text">At Tomorro, we dedicate 1% of our revenues to eliminating carbon dioxide.</p>
+        <button class="footer-image-btn">Learn more</button>
+      </div>
+
+    </div>
+
+    <div class="footer-sections">
+      <div class="teams">
+        <p class="footer-sections-color">Teams</p>
+        <p>Legal teams</p>
+        <p>Sales teams</p>
+        <p>financial teams</p>
+        <p>procurement teams</p>
+        <p>HR teams</p>
+        <p>operation teams</p>
+        <div id="teams-2" class="teams-2  d-none">
+        <p class="footer-sections-color">Use cases</p>
+        <p>Track your contracts</p>
+        <p>Collaborate on contracts</p>
+        <p>Risk visibility and control</p>
+        </div>
+      </div>
+      <div id="Product" class="d-none">
+        <p class="footer-sections-color">Product</p>
+        <p>Contract generation</p>
+        <p>Dynamic templates</p>
+        <p>Approval workflows</p>
+        <p>Contract negotiation</p>
+        <p>E-signature</p>
+        <p>Contract archiving</p>
+        <p>Contract monitoring</p>
+        <p>Contract analysis</p>
+        <p>Security</p>
+        <p>Pricing</p>
+      </div>
+      <div id="Resources" class="d-none">
+        <p class="footer-sections-color">Resources</p>
+        <p>Read our blog</p>
+        <p>Customer testimonial</p>
+        <p>Ebooks</p>
+        <p>Clauses templates</p>
+        <p>Partners</p>
+        <p>News</p>
+        <p>Documentation</p>
+        <p>Status</p>
+      </div>
+
+      <div>
+        <p class="footer-sections-color ">Contact</p>
+        <P>We're recruiting</P>
+        <P>Legal notice</P>
+        <P>Press</P>
+        <P>Facebook</P>
+        <P>Twitter</P>
+        <P>Linkedin</P>
+        <P>Youtube</P>
+      </div>
+    </div>
+
+
+    <div class="copyright" >
+      <p class="copyrightc">&#169 2024 Tomorro</p>
+      <p class="copyrightb">Terms & Conditions</p>
+      <p class="copyrightb">Privacy</p>
+      <p class="copyrightb">Cookies</p>
+
+    </div>
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
